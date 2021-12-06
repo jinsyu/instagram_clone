@@ -19,6 +19,34 @@ const posts = [
     image: "https://picsum.photos/300?1",
     caption: "subscribe it",
   },
+  {
+    id: "123",
+    username: "jinsyu",
+    userImage: "https://picsum.photos/100?1",
+    image: "https://picsum.photos/300?1",
+    caption: "subscribe it",
+  },
+  {
+    id: "123",
+    username: "jinsyu",
+    userImage: "https://picsum.photos/100?1",
+    image: "https://picsum.photos/300?1",
+    caption: "subscribe it",
+  },
+  {
+    id: "123",
+    username: "jinsyu",
+    userImage: "https://picsum.photos/100?1",
+    image: "https://picsum.photos/300?1",
+    caption: "subscribe it",
+  },
+  {
+    id: "123",
+    username: "jinsyu",
+    userImage: "https://picsum.photos/100?1",
+    image: "https://picsum.photos/300?1",
+    caption: "subscribe it",
+  },
 ];
 
 export default function Posts({}: Props): ReactElement {

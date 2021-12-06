@@ -3,6 +3,7 @@ import {
   BookmarkIcon,
   ChatIcon,
   DotsHorizontalIcon,
+  EmojiHappyIcon,
   PaperAirplaneIcon,
 } from "@heroicons/react/outline";
 import { HeartIcon } from "@heroicons/react/solid";
@@ -42,9 +43,20 @@ export default function Post({ post }: Props): ReactElement {
 
       {/* caption */}
       <p className="p-5 truncate">
-        <span>{post.username}</span>
+        <span className="font-bold mr-1">{post.username}</span>
         {post.caption}
       </p>
+
+      {/* input box */}
+      <form className="flex items-center p-4 space-x-4">
+        <EmojiHappyIcon className="postBtn" />
+        <input
+          type="text"
+          placeholder="Add a comment..."
+          className="flex-1 border-none focus:ring-0 outline-none"
+        />
+        <button className="font-semibold text-blue-400">Post</button>
+      </form>
     </div>
   );
 }

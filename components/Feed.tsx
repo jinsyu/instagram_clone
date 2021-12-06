@@ -18,11 +18,13 @@ function Feed({}: Props): ReactElement {
       </section>
 
       {/* Section */}
-      <section>
-        {/* Mini profile */}
-        <MiniProfile />
-        {/* Suggestions */}
-        <Suggestions />
+      <section className="hidden xl:inline-grid md:col-span-1">
+        <div className="fixed top-20">
+          {/* Mini profile */}
+          <MiniProfile />
+          {/* Suggestions */}
+          <Suggestions />
+        </div>
       </section>
     </main>
   );
